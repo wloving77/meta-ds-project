@@ -7,4 +7,4 @@
 - James Sweat (jes9hd@virginia.edu, )
 
 # Getting Started:
-1. Navigate to the data directory and run the unzip.sh command to populate data/data_unzipped
+1. Navigate to the ./data/ directory and run the ./unzip.sh bash script to unzip the data and populate ./data/data_unzipped/
