@@ -2,4 +2,4 @@ env
 venv
 .env
 .venv
-./data/*.csv
+./data/data_unzipped/*
