@@ -8,3 +8,4 @@
 
 # Getting Started:
 1. Navigate to the `./data/` directory and run the `./unzip.sh` bash script to unzip the data and populate `./data/data_unzipped/`
+2. Optionally, you can create a virtual environment and run `pip install -r requirements.txt` to get jupterlab, pandas, numpy, etc..
