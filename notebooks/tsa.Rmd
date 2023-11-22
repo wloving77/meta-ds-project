@@ -1,0 +1,33 @@
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+df = read.csv('subs.csv')
+```
+
+```{r}
+df2 = df[-1,]
+df2$subdiff = diff(df$sub_millions)
+plot(df2$dir_in_2, type = "l")
+lines(df2$dir_in_3, col= 'red')
+lines(df2$dir_in_6, col= 'blue')
+```
+
+```{r}
+df2 = df2[-1:-10,]
+df2$quarter = c(1:length(df2$subdiff))
+lm1 = lm(subdiff ~ dir_in_2 + dir_in_3 + dir_in_6 + act_in_3 + act_in_5 + act_in_10, df2)
+summary(lm1)
+```
+
+
+
+
+
+
+
+
+
+
